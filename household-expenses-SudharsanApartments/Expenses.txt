@@ -1,6 +1,8 @@
 Expenses
 =========
 
+## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
+
 15 Oct 2023, Sunday
 ---------------------
 20 37 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - Rice 1kg, Pudina, Coriander 1 bunch each, Aavin Milk Orange, Heritage Curd, Aavin badam milk, Achi Semiya (Raghavan, Manikanta) [SodexhoMealCard] - Rs 212.84 (Bal Rs 1,336.50)
