@@ -11,6 +11,6 @@ CREATE TABLE IF NOT EXISTS charity_donation (
     institution VARCHAR(255),
     address VARCHAR(255) NOT NULL,
     pan VARCHAR(10),
-    receipts VARCHAR(3),
+    receipts VARCHAR(1),
     remarks TEXT
 );

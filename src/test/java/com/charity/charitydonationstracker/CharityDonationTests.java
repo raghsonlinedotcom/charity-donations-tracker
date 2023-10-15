@@ -5,7 +5,9 @@ import com.charity.charitydonationstracker.repository.CharityDonationsRepository
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.client.response.ExecutingResponseCreator;
 
+import java.sql.SQLOutput;
 import java.time.Year;
 import java.util.HashMap;
 import java.util.List;
@@ -22,11 +24,13 @@ public class CharityDonationTests {
     
     @BeforeAll
     static void initAll() {
+        System.out.println("Execute before all tests in the test class");
     }
 
     @BeforeEach
     void init() {
         donations = charityDonationsRepository.findAll();
+        System.out.println("Execute before each test complete in the test class");
     }
 
     @Test
@@ -47,6 +51,8 @@ public class CharityDonationTests {
 
         yearCounts.forEach((year,count) -> {
             System.out.println("Financial Year " + year + ": " + count + " entries");
+            int expectedCount = 5;
+            assertTrue("In all the financial years expected count is greater than 5", count > expectedCount);
         });
     }
 
@@ -61,6 +67,8 @@ public class CharityDonationTests {
 
         yearCounts.forEach((institution,count) -> {
             System.out.println( "institution is " + institution + ": " + count + " entries");
+            int institutionCount = 1;
+            assertTrue("Every institute count is greater than " + institutionCount, count >= institutionCount);
         });
     }
 
@@ -88,9 +96,11 @@ public class CharityDonationTests {
 
     @AfterEach
     void tearDown() {
+        System.out.println("Execute after each tests in the test class");
     }
 
     @AfterAll
     static void tearDownAll() {
+        System.out.println("Execute after all tests in the test class");
     }
 }
