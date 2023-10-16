@@ -6,6 +6,10 @@ import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -89,6 +93,27 @@ public class CharityDonationTests {
             Assertions.assertEquals(0, charityDonationsCountTest, "Charity donations count is zero");
             System.out.println("Charity donations count is zero");
         }
+    }
+
+
+    @Test
+    public void findDonationsBetweenDates()
+    {
+        LocalDate fromDateLocal = LocalDateTime.of(2023, 01, 01, 00, 00).toLocalDate();
+        LocalDate toDateLocal = LocalDateTime.of(2023, 11, 10, 00, 00).toLocalDate();
+
+        System.out.println("fromDateLocal = " + fromDateLocal);
+        System.out.println("toDateLocal = " + toDateLocal);
+
+        Date fromDate = Date.from(fromDateLocal.atStartOfDay(ZoneId.systemDefault()).toInstant());
+        System.out.println("fromDate = " + fromDate);
+        Date toDate = Date.from(toDateLocal.atStartOfDay(ZoneId.systemDefault()).toInstant());
+        System.out.println("toDate = " + toDate);
+
+        List<CharityDonation> donationsListForDuration = charityDonationsRepository.findByDateBetween(fromDate, toDate);
+
+        System.out.println("donationsListForDuration = " + donationsListForDuration);
+        System.out.println("size : " + donationsListForDuration.size());
     }
 
     @AfterEach
