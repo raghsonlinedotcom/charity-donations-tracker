@@ -9,10 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.springframework.test.util.AssertionErrors.assertTrue;
 
@@ -95,6 +92,66 @@ public class CharityDonationTests {
         }
     }
 
+    @Test
+    public void testFindById() {
+        CharityDonation charityDonation = charityDonationsRepository.findById(1L).get();
+        Assertions.assertEquals(1, charityDonation.getId(), "Id found");
+    }
+
+    @Test
+    public void findByInstitution() {
+        List<CharityDonation> donations = charityDonationsRepository.findByInstitution("London Children's Fund");
+
+        Assertions.assertFalse(donations.isEmpty(), "No donations found for the given institution");
+
+        String expectedInstitution = "London Children's Fund";
+        for (CharityDonation donation : donations) {
+            String actualInstitution = donation.getInstitution();
+            Assertions.assertEquals(expectedInstitution, actualInstitution, "Institute found correctly");
+        }
+    }
+
+    @Test
+    public void testFindByPAN() {
+        Optional<CharityDonation> donations = charityDonationsRepository.findByPan("NZP234");
+        Assertions.assertFalse(donations.isEmpty(), "There is No pan");
+        CharityDonation donation = donations.get();
+        System.out.println(donation + " Hel");
+        String expectedPan = "NZP234";
+        String actualPan = donation.getPan();
+        Assertions.assertEquals(expectedPan, actualPan, "Pan found correctly");
+    }
+
+    @Test
+    public void testFindByFinancialYear() {
+        List<CharityDonation> charityDonationListForYear = charityDonationsRepository.findByFinancialYear("2023-2024");
+        Assertions.assertFalse(charityDonationListForYear.isEmpty(), "In financial year of " + charityDonationListForYear + "there is no records found");
+        int expectedCount = 1;
+        int count = charityDonationListForYear.size();
+        assertTrue("In all the financial years expected count is greater than 5", count > expectedCount);
+    }
+
+    @Test
+    public void testFindByReceiptsStatus() {
+        List<CharityDonation> donations = charityDonationsRepository.findByReceipts("Y");
+        Assertions.assertFalse(donations.isEmpty(), "Receipts found empty");
+        String expectedReceipt = "Y";
+        for(CharityDonation donation: donations) {
+            String actualReceipt = donation.getReceipts();
+            Assertions.assertEquals(expectedReceipt, actualReceipt, "Receipts is correct");
+        }
+    }
+
+    @Test
+    public void testFindByLocation() {
+        List<CharityDonation> donations = charityDonationsRepository.findByAddress("50 Cardiff St, Cardiff, CF10 1BB");
+        Assertions.assertFalse(donations.isEmpty(), "In this no Location records found");
+        String expectedAddress = "50 Cardiff St, Cardiff, CF10 1BB";
+        for(CharityDonation donation : donations) {
+            String actualAddress = donation.getAddress();
+            Assertions.assertEquals(expectedAddress, actualAddress, "Location found correctly");
+        }
+    }
 
     @Test
     public void findDonationsBetweenDates()
