@@ -32,6 +32,6 @@ public class CharityDonation {
     private String institution;
     private String address;
     private String pan;
-    private String Receipts;
+    private String receipts;
     private String remarks;
 }
