@@ -3,13 +3,13 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
-17 Oct 2023, Tuesday
+18 Oct 2023, Wednesday
 ---------------------
 12 00 PM - Rapido Driver @ City Office TRIL Campus, Taramani (Raghavan) - [RaghsCanaraKKDI] - Rs 26 (Bal Rs X)
-15 00 PM - Empty Boxes sold by watchman,  Indira Nagar Adyar, Near Sudharsan Apartments, get cash of Rs 170 for Boxes
+15 00 PM - Empty Boxes sold by watchman,  Indira Nagar Adyar, Near Sudharsan Apartments, [Cash] - Rs 170
 18 30 PM - Dosa Batter @ Shri Krishna Foods, Indira Nagar, Adyar, Near Madras Pongal (Raghavan, Manikanta) - paid by Manikanta through Phone Pe [Cash] - Rs 40
 
-16 Oct 2023, Tuesday
+17 Oct 2023, Tuesday
 ---------------------
 -- 15 15 AM - Aavin Milk Packet 1 No Blue Color at some shop, near Indranagar, Adrsyar [Cash] - Rs 23
 -- 22 00 PM - Masala Tea @ Indira Nagar , Adyar, (Raghavan) - [RaghsCanaraKKDI] -25
