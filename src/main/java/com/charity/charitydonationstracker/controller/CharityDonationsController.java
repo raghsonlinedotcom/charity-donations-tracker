@@ -51,7 +51,7 @@ public class CharityDonationsController {
         return charityDonationList;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public Optional<CharityDonation> getCharityDonationForId(@PathVariable Long id) {
         log.info("Request URL - /{Id} received, id=[" + id + "]");
         Optional<CharityDonation> charityDonationList = charityDonationsRepository.findById(id);
