@@ -100,7 +100,7 @@ public class CharityDonationTests {
 
     @Test
     public void findByInstitution() {
-        List<CharityDonation> donations = charityDonationsRepository.findByInstitution("London Children's Fund");
+        List<CharityDonation> donations = charityDonationsRepository.findAllByInstitution("London Children's Fund");
 
         Assertions.assertFalse(donations.isEmpty(), "No donations found for the given institution");
 
@@ -133,7 +133,7 @@ public class CharityDonationTests {
 
     @Test
     public void testFindByReceiptsStatus() {
-        List<CharityDonation> donations = charityDonationsRepository.findByReceipts("Y");
+        List<CharityDonation> donations = charityDonationsRepository.findAllByReceipts("Y");
         Assertions.assertFalse(donations.isEmpty(), "Receipts found empty");
         String expectedReceipt = "Y";
         for(CharityDonation donation: donations) {
@@ -144,7 +144,7 @@ public class CharityDonationTests {
 
     @Test
     public void testFindByLocation() {
-        List<CharityDonation> donations = charityDonationsRepository.findByAddress("50 Cardiff St, Cardiff, CF10 1BB");
+        List<CharityDonation> donations = charityDonationsRepository.findAllByAddress("50 Cardiff St, Cardiff, CF10 1BB");
         Assertions.assertFalse(donations.isEmpty(), "In this no Location records found");
         String expectedAddress = "50 Cardiff St, Cardiff, CF10 1BB";
         for(CharityDonation donation : donations) {

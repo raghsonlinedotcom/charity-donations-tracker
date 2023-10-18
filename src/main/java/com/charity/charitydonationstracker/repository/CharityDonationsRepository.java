@@ -15,15 +15,17 @@ public interface CharityDonationsRepository extends JpaRepository<CharityDonatio
 
     List<CharityDonation> findAllByFinancialYearAndInstitution(String financialYear, String institution);
 
-    List<CharityDonation> findByInstitution(String institution);
+    List<CharityDonation> findAllByInstitution(String institution);
+
+    List<CharityDonation> findAllByPan(String pan);
 
     Optional<CharityDonation> findByPan(String pan);
 
     List<CharityDonation> findByFinancialYear(String financialYear);
 
-    List<CharityDonation> findByReceipts(String Receipts);
+    List<CharityDonation> findAllByReceipts(String receipts);
 
-    List<CharityDonation> findByAddress(String address);
+    List<CharityDonation> findAllByAddress(String address);
 
     List<CharityDonation> findByDate(Date date);
 
