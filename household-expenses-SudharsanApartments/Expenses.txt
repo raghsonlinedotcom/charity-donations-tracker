@@ -4,7 +4,7 @@ Expenses
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
 
-19 Oct 2023, Wednesday
+19 Oct 2023, Thursday
 ---------------------
 -- 18 30 PM - Dosa Batter @ Shri Krishna Foods, Indira Nagar, Adyar, Near Madras Pongal (Raghavan, Manikanta) - paid by Manikanta through Phone Pe [Cash] - Rs 40
 -- 18 30 PM - Curd Packet, Aavin Milk Packet 1 No Blue Color @ Tea shop, near Indranagar Signal, Adyar [Cash] - Rs 69
