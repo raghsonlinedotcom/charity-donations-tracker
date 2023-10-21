@@ -104,7 +104,7 @@ public class CharityDonationsController {
         return charityDonationList;
     }
 
-    @GetMapping("/{fromDate}/to/{toDate}")
+    @GetMapping("/{fromDate}/{toDate}")
     public List<CharityDonation> getAllCharityDonationForDate(
             @PathVariable("fromDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date fromDate,
             @PathVariable("toDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date toDate) {
