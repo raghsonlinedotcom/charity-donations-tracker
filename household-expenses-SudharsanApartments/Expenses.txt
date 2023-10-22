@@ -3,6 +3,15 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
+22 Oct 2023, Sunday
+---------------------
+07 45 PM - Home  @ Native Cow Milk, Indira Nagar Adyar, Near Sudharsan Apartments - 1ltr (Raghavan, Manikanta, Kiruba) [Cash] - 80 Rs
+10 14 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - ,2kg Onion, 1kg Tomato, Mushroom, capsicum, Heritage Curd (Raghavan, Manikanta, Kiruba) [SodexhoMealCard] - Rs 240.76 (Bal Rs 1,336.50)
+01 32 PM - Movie Tickets Booked Via Book My Show for Leo Movie @ Ganapathi Ram Nagar ,Adyar, 3 Tkts 23 Oct 2023 -  (Raghavan, Manikanta, Kiruba) each ticket 190 Rs and Convenience fee 106 Rs , 2 Tkts waived Off for Using SBI Elite Card [SBI Elite] -296.20
+
+21 Oct 2023, Saturday
+---------------------
+-- 11 30 PM - Meals @ Road side shop, Indira Nagar, Adyar, Near Petrol bunk Reliance mart Road(Raghavan, Manikanta) - paid by Manikanta through Phone Pe [Cash] - Rs 100
 
 19 Oct 2023, Thursday
 ---------------------
