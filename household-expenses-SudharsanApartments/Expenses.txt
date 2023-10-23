@@ -3,6 +3,19 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
+23 Oct 2023, Monday
+---------------------
+08 00 AM - Home  @ Native Curd, Indira Nagar Adyar, Near Sudharsan Apartments - 500ml (Raghavan, Manikanta, Kiruba) [Cash] - 50 Rs
+09 49 AM - Breakfast @ , Ganapathi Ram Nagar ,Adyar Near Theater - 3 Plates Idly (Raghavan, Manikanta, Kuruba) - paid by Manikanta through Phone Pe [Cash] - Rs 100
+09 49 AM - Mini Meals @ ,DD road Adyar - Bucket Pongal, Sweet Pongal, tea (Raghavan, Kuruba) [SodexhoMealCard] - Rs 280
+01 32 PM - Snacks @ Ganapathi Ram Nagar Theater ,Adyar -  (Raghavan, Manikanta, Kiruba) - Rs 40
+12 45 PM - Mercy Electronics DD road Adyar @ Zip brand TV Stand and Two batteries - Rs 2395
+03 00 PM - Tea Boy LB Roda Adyar Cash Paid By Raghavan Rs 15,
+12 20 PM - Beverages @ Kothas Coffee near ganapathy ram theatre - Cash Paid by Raghavan 15rs
+03 10 PM - Kitchen Screw @ 1 Screw for Kitchen shrink  - Cash Paid by Raghavan Rs 1
+04 10 PM - Home @ Worktable 6inch 16800RS, bar stool 2 Nos 5080 each, Wooden bookshelf table 4300, Recliner sofa Rs 24000 - Total Rs 51600 after discount Advance paid Home one Furniture DD road Adyar [SBI Elite] -Rs 10,000
+04 30 PM - Boxes @ Boxes sold to watchman Indira Nagar, Adyar, Rs 50
+
 22 Oct 2023, Sunday
 ---------------------
 07 45 PM - Home  @ Native Cow Milk, Indira Nagar Adyar, Near Sudharsan Apartments - 1ltr (Raghavan, Manikanta, Kiruba) [Cash] - 80 Rs
