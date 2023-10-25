@@ -3,6 +3,11 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
+25 Oct 2023 Wednesday
+--------------------
+06 40 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - ,1 kg Apple Red Delicious, 1kg GooseBerry Amla, Aavin milk, 3 Vijay Butter Milk , Udhayam Ghee 100ml (Raghavan, Manikanta, Kiruba) [Raghavan Phonepay] - Rs 341.55
+06 50 PM - Home @ LB Road , Near Petrol Bank, Adyar, Chennai, Rice Cooker Bolt , (Raghavan, Manikanta, Kiruba) paid by Manikanta through Phone Pe [Cash] - Rs 20
+
 24 Oct 2023 Tuesday
 --------------------
 10 14 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - ,1 Kg Rice, Ladies Finger 250 Grams, Beans 250 Grams (Raghavan, Manikanta, Kiruba) paid by Manikanta through Phone Pe [Cash] - Rs 100
@@ -17,7 +22,7 @@ Expenses
 06 10 PM - Flowers @ Road side shop Indira Nagar Adyar - Dusshera Festival Vinayagar Temple - (Raghavan) - paid by Raghavan through Phone Pe [Cash] - Rs 50
 06 30 PM - Dosa Batter @ Shri Krishna Foods, Indira Nagar, Adyar, Near Madras Pongal (Raghavan, Manikanta) - paid by Manikanta through Phone Pe [Cash] - Rs 40
 07 00 PM - Home @ Collected Money from Raghavan to Manikanta to use for expenses - (Raghavan, Manikanta) - paid by Manikanta through Phone Pe [Cash] - Rs 150
-
+09 00 PM - Beverages @ Cream stone Teachers Colony,Adyar , Chennai - (Raghavan, Manikanta) - - paid by Raghavan through Phone Pe [Cash] - Rs 227
 
 23 Oct 2023, Monday
 ---------------------
@@ -33,6 +38,7 @@ Expenses
 04 30 PM - Empty Boxes sold by watchman,  Indira Nagar Adyar, Near Sudharsan Apartments, [Cash] - Rs 50
 09 00 PM - Flowers @ Road side shop Indira Nagar Adyar - paid by Manikanta through Phone Pe [Cash] - Rs 40
 09 20 PM - Hardware shop @ Spanner for Tv ,LB Road  Adyar - paid by Manikanta through Phone Pe [Cash] - Rs 30
+
 
 22 Oct 2023, Sunday
 ---------------------
