@@ -3,6 +3,15 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
+26 Oct 2023 Wednesday
+--------------------
+01 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 1 kg Pomegranates, 4 Vijay Butter Milk , 500 Grms Curd (Raghavan, Manikanta, Kiruba) [HSBCCashback] - Rs 312.58
+01 40 PM - Beverages @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments  - Coconut water (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 30
+02 00 PM - Medicine @ Appolo Pharmacy ,  Indira Nagar Adyar, Near Sudharsan Apartments  - Pilex Tablet Box -  (Raghavan) [HSBCCashback] - Rs 185
+02 15 PM - Groceries @ @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments  - Pigs - (Raghavan) - Rs 180
+06 30 PM - Dosa Batter @ Shri Krishna Foods, Indira Nagar, Adyar, Near Madras Pongal (Raghavan, Manikanta, Kuruba) - paid by Manikanta through Phone Pe [Cash] - Rs 40
+06 40 PM - Curd Packet, Aavin Milk Packet 1 No Blue Color @ Aavin Shop, near Indra Nagar , Adyar, Chennai, (Raghavan, Manikanta, Kuruba), Cash Paid By Manikanta - Rs 55
+
 25 Oct 2023 Wednesday
 --------------------
 06 40 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - ,1 kg Apple Red Delicious, 1kg GooseBerry Amla, Aavin milk, 3 Vijay Butter Milk , Udhayam Ghee 100ml (Raghavan, Manikanta, Kiruba) [Raghavan Phonepay] - Rs 341.55
