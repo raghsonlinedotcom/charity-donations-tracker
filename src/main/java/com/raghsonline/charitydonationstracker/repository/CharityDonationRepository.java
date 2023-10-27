@@ -1,6 +1,6 @@
-package com.charity.charitydonationstracker.repository;
+package com.raghsonline.charitydonationstracker.repository;
 
-import com.charity.charitydonationstracker.entity.CharityDonation;
+import com.raghsonline.charitydonationstracker.entity.CharityDonation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface CharityDonationsRepository extends JpaRepository<CharityDonation, Long> {
+public interface CharityDonationRepository extends JpaRepository<CharityDonation, Long> {
 
     List<CharityDonation> findAllByFinancialYear(String financialYear);
 

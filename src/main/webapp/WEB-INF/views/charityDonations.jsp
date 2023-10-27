@@ -138,7 +138,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script>
 document.addEventListener("DOMContentLoaded", function () {
 const searchForm = document.getElementById('searchForm');
 searchForm.addEventListener('submit', function (event) {
@@ -189,6 +189,6 @@ console.log('API call failed: ' + error);
 });
 });
 
-
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package com.charity.charitydonationstracker.entity;
+package com.raghsonline.charitydonationstracker.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

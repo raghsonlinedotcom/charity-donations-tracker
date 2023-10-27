@@ -1,7 +1,7 @@
-package com.charity.charitydonationstracker;
+package com.raghsonline.charitydonationstracker;
 
-import com.charity.charitydonationstracker.entity.CharityDonation;
-import com.charity.charitydonationstracker.repository.CharityDonationsRepository;
+import com.raghsonline.charitydonationstracker.entity.CharityDonation;
+import com.raghsonline.charitydonationstracker.repository.CharityDonationRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -15,7 +15,7 @@ import java.util.List;
 public class CharityDonationsTrackerApplication implements CommandLineRunner
 {
 	@Autowired
-	CharityDonationsRepository repository;
+	CharityDonationRepository repository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(CharityDonationsTrackerApplication.class, args);

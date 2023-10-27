@@ -1,4 +1,4 @@
-package com.charity.charitydonationstracker.servlet;
+package com.raghsonline.charitydonationstracker.servlet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
