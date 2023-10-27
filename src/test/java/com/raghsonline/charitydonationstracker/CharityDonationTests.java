@@ -1,7 +1,7 @@
-package com.charity.charitydonationstracker;
+package com.raghsonline.charitydonationstracker;
 
-import com.charity.charitydonationstracker.entity.CharityDonation;
-import com.charity.charitydonationstracker.repository.CharityDonationsRepository;
+import com.raghsonline.charitydonationstracker.entity.CharityDonation;
+import com.raghsonline.charitydonationstracker.repository.CharityDonationRepository;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +16,7 @@ import static org.springframework.test.util.AssertionErrors.assertTrue;
 @SpringBootTest
 public class CharityDonationTests {
     @Autowired
-    private CharityDonationsRepository charityDonationsRepository;
+    private CharityDonationRepository charityDonationsRepository;
 
     private List<CharityDonation> donations;
     

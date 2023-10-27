@@ -1,7 +1,7 @@
-package com.charity.charitydonationstracker.controller;
+package com.raghsonline.charitydonationstracker.controller;
 
-import com.charity.charitydonationstracker.entity.CharityDonation;
-import com.charity.charitydonationstracker.repository.CharityDonationsRepository;
+import com.raghsonline.charitydonationstracker.entity.CharityDonation;
+import com.raghsonline.charitydonationstracker.repository.CharityDonationRepository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,10 +20,10 @@ import java.util.Optional;
 @NoArgsConstructor
 @Data
 @Slf4j
-public class CharityDonationsController {
+public class CharityDonationRESTController {
 
     @Autowired
-    CharityDonationsRepository charityDonationsRepository;
+    CharityDonationRepository charityDonationsRepository;
 
     /*
         http://localhost:8080/api/CharityDonations/ --> Gets all the Donations
