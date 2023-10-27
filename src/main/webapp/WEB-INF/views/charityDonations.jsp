@@ -148,7 +148,7 @@ const searchInput = document.getElementById('searchInput').value;
 const searchField = document.querySelector('input[name="searchBy"]:checked').value;
 console.log(searchField + " radio option clicked");
 
-const url = `http://localhost:8080/api/CharityDonations/${searchField}/${searchInput}`;
+const url = `http://localhost:8081/api/CharityDonations/${searchField}/${searchInput}`;
 
 fetch(url, {
 method: 'GET',
