@@ -3,6 +3,13 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
+27 Oct 2023 Saturday
+--------------------
+06 30 PM - Dosa Batter @ Shri Krishna Foods, Indira Nagar, Adyar, Near Madras Pongal (Raghavan, Manikanta, Kuruba) - paid by Manikanta through Phone Pe [Cash] - Rs 40
+01 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 100Grms Tomatos (Raghavan, Manikanta) [Paid by Manikanta] - Rs 9.58
+01 15 PM - Groceries @ @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments  - Pigs - (Raghavan) - Rs 180
+06 40 PM - Aavin Milk Packet 1 No Blue Color @ Aavin Shop, near Indra Nagar , Adyar, Chennai, (Raghavan, Manikanta, Kuruba), Cash Paid By Manikanta - Rs 20
+
 27 Oct 2023 Friday
 --------------------
 11 40 PM - Water Can @ Naresh Marketing RaviChandran, Indira Nagar Adyar, Near Sudharsan Apartments - Water Can (Raghavan, Manikanta) [Paytm] - Rs 80
