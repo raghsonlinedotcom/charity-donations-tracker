@@ -70,12 +70,12 @@
 
         }
     </style>
-    <title>Data Search</title>
+    <title>Charity Donation Tracker</title>
 </head>
 
 <body>
 
-    <div class="container mt-4" style="border: 2px solid brown;">
+    <div class="container mt-4" style="border: 2px solid brown;max-width: 80%;">
         <!-- Search Form -->
         <form id="searchForm">
             <div class="form-group form-inline">
@@ -119,7 +119,7 @@
     </div>
 
     <!-- Display Search Results in a Table -->
-    <div class="container mt-4 table-container" style="border: 2px solid brown;">
+    <div class="container mt-4 table-container" style="border: 2px solid brown;max-width: 80%;">
         <table class="table">
             <thead>
                 <tr>
