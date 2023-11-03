@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f0f0f0;
+            background: #e2eef7;
+            font-family: 'Avenir', Helvetica, sans-serif !important;
+            margin: 0;
+            overflow-x: hidden;
+            color: #202020;
+            font-weight: 400;
+            font-size: 14;
         }
 
         .container {
@@ -32,6 +38,24 @@
         table {
             border: 1px solid #ccc;
         }
+
+        .right-sidebar {
+            position: fixed;
+            top: 0;
+            right: -600px;
+            /* Start with it hidden on the right side */
+            width: 600px;
+            height: 100%;
+            background-color: white;
+            transition: right 0.3s ease-in-out;
+            z-index: 999;
+        }
+
+        /* Add transition effect when opening and closing the drawer */
+        .right-sidebar.open {
+            right: 0;
+        }
+
 
         th,
         td {
@@ -120,6 +144,18 @@
 
     <!-- Display Search Results in a Table -->
     <div class="container mt-4 table-container" style="border: 2px solid brown;max-width: 80%;">
+        <div>
+            <h3 style="font-size: 16px;">Charity Donation Tracker
+                <!-- Add Charity Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="togglecharityDonationDiv()" height="26"
+                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+
+            </h3>
+
+        </div>
         <table class="table">
             <thead>
                 <tr>
@@ -139,6 +175,144 @@
                 <!-- Search results will be displayed here -->
             </tbody>
         </table>
+    </div>
+
+    <div class="right-sidebar" id="charityDonationDiv" style="background: #e2eef7;">
+        <div class="slimscrollright">
+            <div class="rpanel-title" style="padding-left: 20px;
+                                padding-right: 20px;
+                                padding-top: 8px;" onclick="cancelCharityDonation()" id="charityDonationDivTitle">
+                Charity Donation <span> <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </span>
+            </div>
+            <div class="r-panel-body">
+                <div class="div-white p-3" style="background: white;
+                                    margin: 20px;
+                                    border: 3px solid lightgray;
+                                    border-radius: 10px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Financial Year</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Financial Year"
+                                id="financialYear" class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Date</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Date" id="date"
+                                class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Address</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Address" id="address"
+                                class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Institute</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Institute"
+                                id="institute" class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Amount</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Amount" id="amount"
+                                class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Receipt</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Receipt" id="receipt"
+                                class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Pan Number</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Pan" id="pan"
+                                class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Receipts</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Receipts"
+                                id="receipts" class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Remarks</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Remarks" id="remarks"
+                                class="form-control font-14" value="" required />
+                        </div>
+                    </div>
+                    <div class="row p-3"></div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn waves-effect waves-light btn-rounded btn-danger"
+                                onClick="cancelCharityDonation()">Cancel</button>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button type="button" id="saveCharityDonationBtn"
+                                class="btn waves-effect waves-light btn-rounded btn-info"
+                                onClick="saveCharity()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -270,6 +444,15 @@
                     });
             });
         });
+
+        function togglecharityDonationDiv() {
+            var div = document.getElementById('charityDonationDiv');
+            div.classList.toggle('open');
+        }
+
+        function cancelCharityDonation() {
+            document.getElementById('charityDonationDiv').classList.remove('open');
+        }
 
     </script>
 </body>
