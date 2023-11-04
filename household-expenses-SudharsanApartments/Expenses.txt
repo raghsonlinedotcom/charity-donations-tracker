@@ -3,7 +3,7 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
-27 Oct 2023 Saturday
+28 Oct 2023 Saturday
 --------------------
 06 30 PM - cobbler @ chappal repair, Indira Nagar Adyar, Near Sudharsan Apartments - cobbler (chappal repair) for the shoe sole to be pasted and stitched (Raghavan) [Cash] - Rs 100.00
 06 45 PM - Groceries @ Mahalakshmi Hardware, Indira Nagar Adyar, Near Sudharsan Apartments - Bathroom Brushes (Raghavan) [Cash] - Rs 340.00 ?
