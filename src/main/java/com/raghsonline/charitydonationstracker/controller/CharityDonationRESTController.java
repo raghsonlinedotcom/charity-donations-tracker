@@ -114,4 +114,17 @@ public class CharityDonationRESTController {
         log.info("charityDonationList size : " + charityDonationList.size());
         return charityDonationList;
     }
+
+    @PostMapping()
+    public CharityDonation createCharityDonation(@RequestBody CharityDonation charityDonation) {
+        log.info("Getting charity donation values: " + charityDonation);
+        return charityDonationsRepository.save(charityDonation);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteCharityDonation(@PathVariable Long id) {
+        charityDonationsRepository.deleteById(id);
+    }
+
+
 }

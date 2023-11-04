@@ -6,6 +6,8 @@ import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -171,6 +173,24 @@ public class CharityDonationTests {
 
         System.out.println("donationsListForDuration = " + donationsListForDuration);
         System.out.println("size : " + donationsListForDuration.size());
+    }
+
+    @Test
+    public void testSaveCharityDonation() throws ParseException {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = dateFormat.parse("2023-10-14");
+        CharityDonation charityDonation = CharityDonation.builder()
+                .amount(1001.00)
+                .date(date)
+                .financialYear("2024-2025")
+                .institution("Hope for Tomorrow")
+                .pan("PQR456")
+                .receipt("R123458DLS")
+                .receipts("Y")
+                .remarks("Education Support - Scholarships")
+                .build();
+        charityDonationsRepository.save(charityDonation);
+        assertTrue("saving id must be greater that zero", charityDonation.getId() > 0);
     }
 
     @AfterEach
