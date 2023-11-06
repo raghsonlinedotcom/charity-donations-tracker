@@ -126,5 +126,26 @@ public class CharityDonationRESTController {
         charityDonationsRepository.deleteById(id);
     }
 
+    @PutMapping("/{id}")
+    public CharityDonation updateCharityDonation(@PathVariable Long id, @RequestBody CharityDonation updatedDonation) {
+        log.info("Request URL - /{id} received for updating, id=" + id);
+        Optional<CharityDonation> existingDonation = charityDonationsRepository.findById(id);
+
+            CharityDonation charityDonation = existingDonation.get();
+            charityDonation.setFinancialYear(updatedDonation.getFinancialYear());
+            charityDonation.setDate(updatedDonation.getDate());
+            charityDonation.setAddress(updatedDonation.getAddress());
+            charityDonation.setReceipt(updatedDonation.getReceipt());
+            charityDonation.setInstitution(updatedDonation.getInstitution());
+            charityDonation.setReceipts(updatedDonation.getReceipts());
+            charityDonation.setRemarks(updatedDonation.getRemarks());
+            charityDonation.setAmount(updatedDonation.getAmount());
+
+
+            CharityDonation updatedDonationResult = charityDonationsRepository.save(charityDonation);
+            log.info("Updated charity donation: " + updatedDonationResult);
+            return updatedDonationResult;
+
+    }
 
 }

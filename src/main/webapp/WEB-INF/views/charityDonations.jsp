@@ -99,7 +99,7 @@
 
 <body>
 
-    <div class="container mt-4" style="border: 2px solid brown;max-width: 85%;">
+    <div class="container mt-4" style="border: 2px solid brown;max-width: 90%;">
         <!-- Search Form -->
         <form id="searchForm">
             <div class="form-group form-inline">
@@ -143,7 +143,7 @@
     </div>
 
     <!-- Display Search Results in a Table -->
-    <div class="container mt-4 table-container" style="border: 2px solid brown;max-width: 85%;">
+    <div class="container mt-4 table-container" style="border: 2px solid brown;max-width: 90%;">
         <div>
             <h3 style="font-size: 16px;">Charity Donation Tracker
                 <!-- Add Charity Icon -->
@@ -193,6 +193,17 @@
                                     margin: 20px;
                                     border: 3px solid lightgray;
                                     border-radius: 10px;">
+                    <div class="row" style="display: none;">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label font14">Id</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="textBox" pattern="[A-Za-z0-9_]+" placeholder="Id" id="editItemId"
+                                class="form-control font-14" value="" required />
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
@@ -376,16 +387,32 @@
                             const remarksCell = document.createElement('td');
                             remarksCell.textContent = item.remarks;
 
-                            const actionCell = document.createElement('td'); 
-                            const editAnchor = document.createElement('a');
-                            editAnchor.innerHTML =  `<svg xmlns="http://www.w3.org/2000/svg" onclick="editCharityDonation()" width="16" height="16" style="margin-right: 16px" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" onclick="deleteCharityDonation()" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
-                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
-                            </svg>`;
-                            
-                            actionCell.appendChild(editAnchor);
+                            // Create the "Edit" button
+                            const editButton = document.createElement('button');
+                            editButton.textContent = 'Edit';
+                            editButton.className = 'btn btn-primary';
+                            editButton.style.marginRight = '5px';
+                            editButton.onclick = () => editCharityDonation(item);
+
+                            // Create the "Delete" button
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.className = 'btn btn-danger';
+                            deleteButton.onclick = () => deleteCharityDonation(item.id);
+
+                            // Create a container for the buttons
+                            const buttonContainer = document.createElement('div');
+                            buttonContainer.style.display = 'flex'; // Apply display: flex to the container
+
+                            // Append the "Edit" and "Delete" buttons to the container
+                            buttonContainer.appendChild(editButton);
+                            buttonContainer.appendChild(deleteButton);
+
+                            // Create a cell for the action buttons
+                            const actionCell = document.createElement('td');
+                            actionCell.appendChild(buttonContainer); // Append the button container to the cell
+
+
 
                             // Append the cells to the row in the desired order
                             newRow.appendChild(idCell);
@@ -435,16 +462,33 @@
                         const remarksCell = document.createElement('td');
                         remarksCell.textContent = data.remarks;
 
-                        const actionCell = document.createElement('td'); 
-                            const editAnchor = document.createElement('a');
-                            editAnchor.innerHTML =  `<svg xmlns="http://www.w3.org/2000/svg" onclick="editCharityDonation()" width="16" height="16" style="margin-right: 16px" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" onclick="deleteCharityDonation()" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
-                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
-                            </svg>`;
-                            
-                            actionCell.appendChild(editAnchor);
+                        // Create the "Edit" button
+                        const editButton = document.createElement('button');
+                        editButton.style.marginRight = '5px';
+                        editButton.textContent = 'Edit';
+                        editButton.className = 'btn btn-primary';
+                        editButton.onclick = () => editCharityDonation(data);
+
+                        // Create the "Delete" button
+                        const deleteButton = document.createElement('button');
+                        deleteButton.textContent = 'Delete';
+                        deleteButton.className = 'btn btn-danger';
+                        deleteButton.onclick = () => deleteCharityDonation(data.id);
+
+                        // Create a container for the buttons
+                        const buttonContainer = document.createElement('div');
+                        buttonContainer.style.display = 'flex'; // Apply display: flex to the container
+
+                        // Append the "Edit" and "Delete" buttons to the container
+                        buttonContainer.appendChild(editButton);
+                        buttonContainer.appendChild(deleteButton);
+
+                        // Create a cell for the action buttons
+                        const actionCell = document.createElement('td');
+                        actionCell.appendChild(buttonContainer); // Append the button container to the cell
+
+                        // Append the action cell to the row
+
 
                         // Append the cells to the row in the desired order
                         newRow.appendChild(idCell);
@@ -459,7 +503,6 @@
                         newRow.appendChild(remarksCell);
                         newRow.appendChild(actionCell);
 
-                        // Append the row to the search results table
                         searchResults.appendChild(newRow);
                     }
                 })
@@ -478,33 +521,57 @@
         }
 
         function saveCharity() {
-            const charityDonationData = {};
-            charityDonationData.financialYear = document.getElementById('financialYear').value;
-            charityDonationData.date = document.getElementById('date').value;
-            charityDonationData.address = document.getElementById('address').value;
-            charityDonationData.institution = document.getElementById('institute').value;
-            charityDonationData.amount = document.getElementById('amount').value;
-            charityDonationData.receipt = document.getElementById('receipt').value;
-            charityDonationData.pan = document.getElementById('pan').value;
-            charityDonationData.receipts = document.getElementById('receipts').value;
-            charityDonationData.remarks = document.getElementById('remarks').value;
+            const charityDonationData = {
+                financialYear: document.getElementById('financialYear').value,
+                date: document.getElementById('date').value,
+                address: document.getElementById('address').value,
+                institution: document.getElementById('institute').value,
+                amount: document.getElementById('amount').value,
+                receipt: document.getElementById('receipt').value,
+                pan: document.getElementById('pan').value,
+                receipts: document.getElementById('receipts').value,
+                remarks: document.getElementById('remarks').value,
+            };
 
-            fetch('http://localhost:8081/api/CharityDonations', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(charityDonationData),
-            })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Charity Donation saved:', data);
-                    document.getElementById('charityDonationDiv').classList.remove('open');
-                    fetchAllCharityDonations();
+            const editItemId = document.getElementById('editItemId').value;
+
+            if (editItemId) {
+                // Perform an update
+                fetch('http://localhost:8081/api/CharityDonations/' + editItemId, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(charityDonationData),
                 })
-                .catch(error => {
-                    console.error('Error saving Charity Donation:', error);
-                });
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Charity Donation updated:', data);
+                        document.getElementById('charityDonationDiv').classList.remove('open');
+                        fetchAllCharityDonations();
+                    })
+                    .catch(error => {
+                        console.error('Error updating Charity Donation:', error);
+                    });
+            } else {
+                // Perform an add
+                fetch('http://localhost:8081/api/CharityDonations', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(charityDonationData),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Charity Donation saved:', data);
+                        document.getElementById('charityDonationDiv').classList.remove('open');
+                        fetchAllCharityDonations();
+                    })
+                    .catch(error => {
+                        console.error('Error saving Charity Donation:', error);
+                    });
+            }
         }
 
         function fetchAllCharityDonations() {
@@ -562,16 +629,34 @@
 
                             const remarksCell = document.createElement('td');
                             remarksCell.textContent = item.remarks;
+                            // Create the "Edit" button
+                            const editButton = document.createElement('button');
+                            editButton.textContent = 'Edit';
+                            editButton.className = 'btn btn-primary';
+                            editButton.style.marginRight = '5px';
+                            editButton.onclick = () => editCharityDonation(item);
 
+                            // Create the "Delete" button
+                            const deleteButton = document.createElement('button');
+                            deleteButton.textContent = 'Delete';
+                            deleteButton.className = 'btn btn-danger';
+                            deleteButton.onclick = () => deleteCharityDonation(item.id);
+
+                            // Create a container for the buttons
+                            const buttonContainer = document.createElement('div');
+                            buttonContainer.style.display = 'flex'; // Apply display: flex to the container
+
+                            // Append the "Edit" and "Delete" buttons to the container
+                            buttonContainer.appendChild(editButton);
+                            buttonContainer.appendChild(deleteButton);
+
+                            // Create a cell for the action buttons
                             const actionCell = document.createElement('td');
-                        const deleteButton = document.createElement('button');
-                        deleteButton.textContent = 'Delete';
-                        deleteButton.className = 'btn btn-danger';
-                        deleteButton.onclick = () => deleteCharityDonation(item.id);
+                            actionCell.appendChild(buttonContainer); // Append the button container to the cell
 
-                        actionCell.appendChild(deleteButton);
 
-                            
+
+
                             newRow.appendChild(idCell);
                             newRow.appendChild(financialYearCell);
                             newRow.appendChild(dateCell);
@@ -594,9 +679,26 @@
                 });
         }
 
-        function editCharityDonation() {
-            console.log("hello edit");
+        function editCharityDonation(item) {
+            const rightSidebar = document.getElementById('charityDonationDiv');
+            rightSidebar.classList.add('open');
+
+            // Populate the form fields with the selected item's data
+            document.getElementById('financialYear').value = item.financialYear;
+            document.getElementById('date').value = item.date;
+            document.getElementById('address').value = item.address;
+            document.getElementById('institute').value = item.institution;
+            document.getElementById('amount').value = item.amount;
+            document.getElementById('receipt').value = item.receipt;
+            document.getElementById('pan').value = item.pan;
+            document.getElementById('receipts').value = item.receipts;
+            document.getElementById('remarks').value = item.remarks;
+
+            document.getElementById('editItemId').value = item.id;
+
+            document.getElementById('saveCharityDonationBtn').textContent = 'Update';
         }
+
 
         function deleteCharityDonation(id) {
             if (confirm('Are you sure you want to delete this charity donation?')) {
@@ -606,17 +708,17 @@
                         'Content-Type': 'application/json',
                     },
                 })
-                .then(response => {
-                    if (response.ok) {
-                        console.log('Charity Donation deleted successfully');
-                        fetchAllCharityDonations();
-                    } else {
-                        throw new Error('API call failed');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error deleting Charity Donation:', error);
-                });
+                    .then(response => {
+                        if (response.ok) {
+                            console.log('Charity Donation deleted successfully');
+                            fetchAllCharityDonations();
+                        } else {
+                            throw new Error('API call failed');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error deleting Charity Donation:', error);
+                    });
             }
         }
 
