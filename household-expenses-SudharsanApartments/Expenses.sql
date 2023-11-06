@@ -120,23 +120,31 @@ INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-14','10:15:00','Sat','DR',
 -- --------------------
 -- 13 Oct 2023, Friday
 -- --------------------
-
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-13','10:00:00','Fri','DR','India','INR','Chennai','Madras Pongal Shop','Madras Pongal Shop','DD Road, Indranagar Signal, Adyar','Chennai', 'Day-Day','Food','Raghavan','SodexhoMealCard','449.00','Breakfast @ Bucket Pongal, Sweet Pongal (Raghavan, Nachu & Family)', 'NULL', 'Day-Day, Food','0','0.0','2023-11-06 18:10:00','SYSTEM','2023-11-06 18:10:00','Manikanta');
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-13','10:00:00','Fri','DR','India','INR','Chennai','Madras Pongal Shop','Madras Pongal Shop','DD Road, Indranagar Signal, Adyar','Chennai', 'Day-Day','Food','Raghavan','Cash','80.00','Breakfast @ Pongal', 'NULL', 'Day-Day, Food','1','0.0','2023-11-06 18:10:00','SYSTEM','2023-11-06 18:10:00','Manikanta');
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-13','18:30:00','Fri','DR','India','INR','Chennai','Dosa Batter','Shri Krishna Foods','Indranagar, Adyar','Sudharsan Appartment Road', 'Day-Day','Groceries','Raghavan, Manikanta','Cash','40.00','1Kg Dosa Batter @ Shri Krishna Foods Sudharsan Appartment Road Adyar', 'NULL', 'Day-Day, Food','1','0.0','2023-11-02 21:08:00','SYSTEM','2023-11-02 21:08:00','Manikanta');
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-13','20:37:00','Fri','DR','India','INR','Chennai','Reliance farm house','Reliance farm house','Indranagar, Adyar','Sudharsan Appartment Road', 'Day-Day','Groceries','Raghavan, Manikanta','SodexhoMealCard','116.00','Vegetables - Beans, Carrot ,Tomato, Heritage Curd, Milk @ Reliance farm house Sudharsan Appartment Road Adyar', 'NULL', 'Day-Day, Food','1','0.0','2023-11-02 10:15:00','SYSTEM','2023-11-02 10:15:00','Manikanta');
 
 -- --------------------
 -- 11 Oct 2023, Wednesday
 -- --------------------
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-15','20:37:00','Wed','DR','India','INR','Chennai','Brown Tree','Brown Tree','Indranagar, Adyar','Sudharsan Appartment Road', 'Day-Day','Groceries','Raghavan','SodexhoMealCard','899.00','Oma Biscuit, Twitty Fruity Cookies, Readymade Chapathi 10 Pcs Pack , Dry Fruit Mix 2 Packets, Coffee Toy Biscuit, Garlic Peanut etc (Raghavan, Nachu & Family) @ Reliance farm house Sudharsan Appartment Road Adyar', 'NULL', 'Day-Day, Food','0','0.0','2023-11-02 10:15:00','SYSTEM','2023-11-02 10:15:00','Manikanta');
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-01','12:15:00','Wed','DR','India','INR','Chennai','Office','Lunch','Indranagar Signal, Adyar','NULL', 'Day-Day','Food','Raghavan','SodexhoMealCard','891.00','Lunch Ordered Office Canteen, LittleWood Towers 4th Floor, TRIL Campus, Taramani , Adyar, Chennai', 'NULL', 'Day-Day, Food','0','0.0','2023-10-15 18:14:00','SYSTEM','2023-10-15 18:14:00','Manikanta');
 
 
 -- --------------------
 -- 10 Oct 2023, Tuesday
 -- --------------------
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-01','12:15:00','The','DR','India','INR','Chennai','Office','Lunch','Indranagar Signal, Adyar','NULL', 'Day-Day','Food','Raghavan','SodexhoMealCard','891.00','Lunch Ordered Office Canteen, LittleWood Towers 4th Floor, TRIL Campus, Taramani , Adyar, Chennai', 'NULL', 'Day-Day, Food','0','0.0','2023-10-15 18:14:00','SYSTEM','2023-10-15 18:14:00','Manikanta');
 
 
 -- --------------------
 -- 09 Oct 2023, Monday
 -- --------------------
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-01','12:15:00','Mon','DR','India','INR','Chennai','Office','Lunch','Indranagar Signal, Adyar','NULL', 'Day-Day','Food','Raghavan','SodexhoMealCard','891.00','Office Canteen, LittleWood Towers 4th Floor, TRIL Campus, Taramani , Adyar, Chennai', 'NULL', 'Day-Day, Food','0','0.0','2023-10-15 18:14:00','SYSTEM','2023-10-15 18:14:00','Manikanta');
 
 
 -- --------------------
 -- 01 Oct 2023, Sunday
 -- --------------------
+INSERT INTO tblexpenses11jul19 VALUES (NULL, '2023-10-01','12:15:00','Sun','DR','India','INR','Chennai','Office','Swiggy','Indranagar Signal, Adyar','NULL', 'Day-Day','Food','Raghavan, Vishwa, Vibha','SodexhoMealCard','891.00','Lunch Ordered @ Nandana Palace via Swiggy - Mushroom Curry Leaf Dry, Hyderabadi Spl Veg Biryani , Adyar, Chennai', 'NULL', 'Day-Day, Food','0','0.0','2023-10-15 18:14:00','SYSTEM','2023-10-15 18:14:00','Manikanta');
