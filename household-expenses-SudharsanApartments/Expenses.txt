@@ -3,6 +3,15 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
+19 Sep 2023 Sunday
+--------------------
+04 40 PM - Beverages @ Road Side, Indira Nagar Adyar, Near Sudharsan Apartments  - Coconut water (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 80
+05 10 PM - Flowers @ Road side shop Indira Nagar Adyar -  Flower for Swamy Pooja - (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 30
+
+20 Sep 2023 Monday
+--------------------
+06 20 PM - Hardware shop @ Spanner for Rack Fixing ,LB Road  Adyar - paid by Manikanta through Phone Pe [Cash] - Rs 35
+
 28 Oct 2023 Saturday
 --------------------
 06 30 PM - cobbler @ chappal repair, Indira Nagar Adyar, Near Sudharsan Apartments - cobbler (chappal repair) for the shoe sole to be pasted and stitched (Raghavan) [Cash] - Rs 100.00
