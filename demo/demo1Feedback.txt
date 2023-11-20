@@ -1,0 +1,15 @@
+Demo Session1-Feedback 20/112023
+==============================
+Create jira Board for Crate, update and delete
+The Plus create button should be replaced with the meaningful name
+Pan is an acrominiom so it should be capital, removing pan number in number
+financial year default value should come.
+Placeholder should be the sample value.
+Recepts instead of text make it radio btn
+Save entry should come at the first in the table.
+In case of edit the vlaue 
+Create Donation Haeder should be bold and add comment please enter details to create charity
+After Transaction is updated or deleted message should be displayed on the ui.
+Error Halndling is Missing for all the senerios
+Add unique key for receipts number colum in the database
+No Validations on the GUI Form.
