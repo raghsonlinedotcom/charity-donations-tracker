@@ -3,14 +3,53 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
-19 Sep 2023 Sunday
+27 Nov 2023 Monday
+--------------------
+05 00 PM - Groceries @ Sri Lakshmi Oil Shop, Indira Nagar Adyar, Near Sudharsan Apartments - 500grms Gengery oil (Raghavan, Manikanta) [Paid by Manikanta] - Rs 240
+05 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 1kg Tomatoes, 1ltr blue and orange Aavin Milk, 1ltr Curd, 600grms Bridal, 150grms ladies finger  (Raghavan, Manikanta) [Paid by Manikanta] - Rs 201Rs
+05 50 PM - Groceries @ Chow Chow, Roadside shop, Indira Nagar, Adyar, near Signal - 2 Chow Chow Vegetable (Raghavan, Manikanta) - paid by Manikanta through Phone Pe [Cash] - Rs 30
+
+26 Nov 2023 Sunday
+--------------------
+10 30 AM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 1ltr blue and orange Aavin Milk, 1ltr Curd for Relatives (Raghavan, Manikanta) [Paid by Manikanta] - Rs 80Rs
+10 49 AM - Lunch Sweet @ Madras Pongal Restaurant, Indira Nagar, Adyar, Near Sudharsan Apartments - Sweet Pongal (Raghavan & Family) [Paid by Manikanta]- Rs 40
+11 00 AM - Lunch @ Home, Indira Nagar, Adyar, Near Sudharsan Apartments - Banana Leaves(Raghavan & Family) [Paid by Manikanta]- Rs 26
+01 00 PM - Playing @ Home Kids,  Indira Nagar, Adyar, Near Sudharsan Apartments - Jumper balls for kids - [Paid by Manikanta - Rs 48
+
+25 Nov 2023 Saturday
+--------------------
+11 40 PM - Water Can @ Naresh Marketing RaviChandran, Indira Nagar Adyar, Near Sudharsan Apartments - Water Can (Raghavan, Manikanta) [Paytm] - Rs 40
+04 40 PM - Beverages @ Road Side, Indira Nagar Adyar, Near Sudharsan Apartments  - Karuva leaves (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 10
+
+24 Nov 2023 Friday
+--------------------
+04 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 1ltr blue Aavin Milk, Coriander bunch, Tata Iodised Salt, Tata Rock Salt, Amla, 3 Kiwi (Raghavan, Manikanta) [Paid by Manikanta] - Rs 194
+04 40 PM - Beverages @ Road Side, Indira Nagar Adyar, Near Sudharsan Apartments  - Coconut water (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 35
+
+23 Nov 2023 Thurday
+--------------------
+04 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 1 Kg Apple and 1Kg Orange blue Aavin Milk (Raghavan, Manikanta) [Paid by Manikanta] - Rs 200
+05 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 100grms Big Jeera, 500grms Brinjal, 250grms Ladies finger, 1Kg Tomatoes etc  (Raghavan, Manikanta) [Paid by Manikanta] - Rs 180
+
+22 Nov 2023 Wednesday
+--------------------
+04 30 AM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 1 Kg Apple and 1Kg Orange blue Aavin Milk (Raghavan, Manikanta) [Paid by Manikanta] - Rs 200
+04 30 AM - Groceries @ Aavin Parler, Indira Nagar Adyar, Near Sudharsan Apartments - 1ltr blue and Orange Aavin Milk(Raghavan, Manikanta) [Paid by Manikanta] - Rs 50
+
+21 Nov 2023 Tuesday
+--------------------
+04 40 PM - Beverages @ Road Side, Indira Nagar Adyar, Near Sudharsan Apartments  - Coconut water (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 40
+01 30 PM - Groceries @ House, Indira Nagar Adyar, Near Sudharsan Apartments - credit from Raghavan through cash of Rs 1000 (Raghavan, Manikanta) [Paid by Manikanta] - Rs 1000
+
+20 Nov 2023 Monday
+--------------------
+04 40 PM - Beverages @ Road Side, Indira Nagar Adyar, Near Sudharsan Apartments  - Coconut water (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 40
+06 20 PM - Hardware shop @ Spanner for Rack Fixing ,LB Road  Adyar - paid by Manikanta through Phone Pe [Cash] - Rs 35
+
+19 Nov 2023 Sunday
 --------------------
 04 40 PM - Beverages @ Road Side, Indira Nagar Adyar, Near Sudharsan Apartments  - Coconut water (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 80
 05 10 PM - Flowers @ Road side shop Indira Nagar Adyar -  Flower for Swamy Pooja - (Raghavan) - paid by Manikanta through Phone Pe [Cash] - Rs 30
-
-20 Sep 2023 Monday
---------------------
-06 20 PM - Hardware shop @ Spanner for Rack Fixing ,LB Road  Adyar - paid by Manikanta through Phone Pe [Cash] - Rs 35
 
 28 Oct 2023 Saturday
 --------------------
