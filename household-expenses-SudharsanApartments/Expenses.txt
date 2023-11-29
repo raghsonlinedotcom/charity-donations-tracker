@@ -3,6 +3,15 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
+28 Nov 2023 Wednesday
+--------------------
+05 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - Aavin milk 1Ltr, 300grms Potato, 600grms Onion (Raghavan, Manikanta) [Paid by Manikanta] - Rs 105
+
+28 Nov 2023 Tuesday
+--------------------
+05 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - 2kg Idly rice, 1Kg Black Grams, 1ltr Aavin Milk, Four 5Rs Pack Horlicks and 12 Sunrise coffee (Raghavan, Manikanta) [Paid by Manikanta] - Rs 350Rs
+
+
 27 Nov 2023 Monday
 --------------------
 05 00 PM - Groceries @ Sri Lakshmi Oil Shop, Indira Nagar Adyar, Near Sudharsan Apartments - 500grms Gengery oil (Raghavan, Manikanta) [Paid by Manikanta] - Rs 240
