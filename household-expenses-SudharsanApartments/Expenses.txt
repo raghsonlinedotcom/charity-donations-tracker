@@ -3,9 +3,29 @@ Expenses
 
 ## TODO - if the expense entry is made as 'Paid by Manikanta', then the 'YetTo' field should be set to `1` in the SQL script, which means Raghavan will repay Manikanta later.
 
-28 Nov 2023 Wednesday
+02 Dec 2023 Saturday
+--------------------
+01 00 PM - Rapido Driver @ Phoenax Mall Chennai For Apple Watch and Ear pods service (Raghavan, Manikanta) - [Phonepay] - Rs 180
+03 30 PM - Food @ Crust and Co , Phoenix Mall, Velachery Main Road, Chennai - (Raghavan, Manikanta) - [Phonepay] - Rs 946
+07 00 PM - Rapido Driver @ Phoenax Mall Chennai For Apple Watch and Ear pods service (Raghavan, Manikanta) - [Phonepay] - Rs 150
+07 17 PM - KUN Honda Show Room , KUN Honda Active Bike , Adyar Chennai Honda Show Room at Main Road (Raghavan) - Rs 1,08,685
+08 10 PM - Dosa Batter @ Shri Krishna Foods, Indira Nagar, Adyar, Near Madras Pongal (Raghavan) - [Paid By Manikanta] - Rs 40
+08 30 PM - Groceries @ Aavin Parler, Indira Nagar Adyar, Near Sudharsan Apartments - 1ltr Curd (Raghavan, Manikanta) [Phonepay] - Rs 35
+08 40 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - Aavin milk 1Ltr, 1 Yogurt, 3 Pears (Raghavan, Manikanta) [Paid by Manikanta] - Rs 385
+
+01 Dec 2023 Friday
+--------------------
+05 30 PM - Groceries @ Aavin Parler, Indira Nagar Adyar, Near Sudharsan Apartments - 1ltr Curd, 1ltr Blue and Orange Milk (Raghavan, Manikanta) [Phonepay] - Rs 85
+06 40 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - Green Chilli and Lemon (Raghavan, Manikanta) [Paid by Manikanta] - Rs 10
+
+30 Nov 2023 Friday
+--------------------
+05 30 PM - Groceries @ Road Side Shop, Indira Nagar Adyar, Near Sudharsan Apartments - Aavin milk 1Ltr Blue and Orange, 1Kg Pomogranates  (Raghavan, Manikanta) [Paid by Manikanta] - Rs 200
+
+29 Nov 2023 Wednesday
 --------------------
 05 30 PM - Groceries @ Reliance farm house, Indira Nagar Adyar, Near Sudharsan Apartments - Aavin milk 1Ltr, 300grms Potato, 600grms Onion (Raghavan, Manikanta) [Paid by Manikanta] - Rs 105
+04 35 PM - Dosa Batter @ Shri Krishna Foods, Indira Nagar, Adyar, Near Madras Pongal (Raghavan) - [Paid By Manikanta] - Rs 20
 
 28 Nov 2023 Tuesday
 --------------------
