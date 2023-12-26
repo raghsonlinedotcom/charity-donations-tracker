@@ -1,0 +1,51 @@
+@base = http://localhost:8080/api/CharityDonations
+@ContentType = application/json
+
+
+#### Listing All the Charity Donations
+GET {{base}}
+Content-Type: {{ContentType}}
+
+### Listing All the Charity Donations by id
+GET {{base}}/id/8
+Content-Type: {{ContentType}}
+
+### Listing All the Charity Donations by institution
+GET {{base}}/institution/Australian Red Cross
+Content-Type: {{ContentType}}
+
+### Listing All the Charity Donations by receipts
+GET {{base}}/receipts/Y
+Content-Type: {{ContentType}}
+
+### Listing All the Charity Donations by address
+GET {{base}}/address/45 George St, Dunedin, 9016
+Content-Type: {{ContentType}}
+
+### Listing All the Charity Donations by from date to the to date
+GET {{base}}/2023-01-03/2023-11-23
+Content-Type: {{ContentType}}
+
+### Listing All the Charity Donations by pan
+GET {{base}}/UKP789
+Content-Type: {{ContentType}}
+
+### Listing All the Charity Donations by financial year
+GET {{base}}/financialYear/2023-2024
+Content-Type: {{ContentType}}
+
+### Create new Charity Donation
+POST {{base}}
+Content-Type: {{ContentType}}
+
+{
+	"financialYear": "2024-2025",
+	"date": "2023-10-10T18:30:00.000+00:00",
+	"receipt": "R123456",
+	"amount": 1000.0,
+	"institution": "American Charity Foundation",
+	"address": "123 Main St, City, State, 12345",
+	"pan": "DSF322",
+	"receipts": "Y",
+	"remarks": "General Donation - Helping those in need"
+}
